@@ -1,0 +1,252 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 15px;
+    background-color: #1a1a2e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.conteneur {
+    max-width: 680px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+header {
+    background: linear-gradient(135deg, #e94560, #c62a47);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 30px;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.contenu {
+    padding: 25px 30px 40px 30px;
+}
+
+
+.info {
+    background-color: #fff3cd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 12px;
+    color: #7a5c00;
+    margin-bottom: 25px;
+}
+
+
+section {
+    background-color: #fafafa;
+    border-left: 4px solid #e94560;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin: 0 0 18px 0;
+    font-size: 17px;
+    color: #1a1a2e;
+}
+
+
+.champ {
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+/* Deux champs côte à côte */
+.ligne {
+    display: flex;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 13px;
+    background-color: white;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #e94560;
+    box-shadow: 0 0 4px rgba(233, 69, 96, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 15px 15px 15px;
+    margin: 0 0 15px 0;
+    background-color: white;
+}
+
+legend {
+    color: #e94560;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 0 8px;
+}
+
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: #fafafa;
+    border-radius: 6px;
+}
+
+.option label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.option input {
+    accent-color: #e94560;
+    width: 16px;
+    height: 16px;
+}
+
+
+select[multiple] option:checked {
+    background-color: #ccc;
+}
+
+
+.curseur {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.curseur input[type="range"] {
+    flex: 1;
+    accent-color: #e94560;
+}
+
+output {
+    background-color: #e94560;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 6px 18px;
+}
+
+
+input[type="color"] {
+    width: 90px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 3px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.fichier {
+    display: block;
+    width: 100%;
+    padding: 18px 10px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.fichier:hover {
+    border-color: #e94560;
+}
+
+.petit {
+    font-size: 11px;
+    color: #777;
+    margin: 5px 0 0 0;
+}
+
+
+.bouton-zone {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    background: linear-gradient(135deg, #e94560, #c62a47);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 16px 45px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(233, 69, 96, 0.5);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+@media (max-width: 500px) {
+    .ligne {
+        flex-direction: column;
+        gap: 0;
+    }
+}
